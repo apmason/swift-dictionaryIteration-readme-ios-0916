@@ -1,21 +1,4 @@
-let airports = [
-    "YYZ": "Toronto Pearson",
-    "DUB": "Dublin",
-    "JFK": "John F. Kennedy International Airport",
-]
-
-if let airport = airports["YYZ"] {
-    print("The abbreviation for \(airport) is YYZ")
-}
-
-if let airport = airports["DUB"] {
-    print("The abbreviation for \(airport) is DUB")
-}
-
-if let airport = airports["JFK"] {
-    print("The abbreviation for \(airport) is JFK")
-}
-
+let airports = ["YYZ": "Toronto Pearson", "DUB": "Dublin", "JFK": "John F. Kennedy International Airport",]
 for (key, value) in airports {
     print("The abbreviation for \(value) is \(key)")
 }
@@ -24,17 +7,8 @@ for (airportCode, airportName) in airports {
     print("The abbreviation for \(airportName) is \(airportCode)")
 }
 
-
-
-
-let toyStoryFilms = [
-    "Toy Story",
-    "Toy Story 2",
-    "Buzz Lightyear of Star Command: The Adventure Begins",
-    "Toy Story 3",
-    "Toy Story 4"
-]
-
+let toyStoryFilms = ["Toy Story", "Toy Story 2", "Buzz Lightyear of Star Command: The Adventure Begins",
+                     "Toy Story 3", "Toy Story 4"]
 let starWarsFilms = [
     "Star Wars",
     "The Empire Strikes Back",
@@ -51,7 +25,7 @@ let starWarsFilms = [
 let fastAndFuriousFilms = [
     "The Fast and the Furious",
     "2 Fast 2 Furious",
-    "Turbo-Charged Prelud",
+    "Turbo-Charged Prelude",
     "Tokyo Drift",
     "Fast & Furious",
     "Los Bandoleros",
@@ -61,12 +35,8 @@ let fastAndFuriousFilms = [
     "Fast 8"
 ]
 
-let movies = [
-    "Star Wars": starWarsFilms,
-    "Fast & Furious": fastAndFuriousFilms,
-    "Toy Story": toyStoryFilms,
-]
-
-for (franchise, titles) in movies {
-    print("There are \(titles.count) movies in the \(franchise) series")
+let movies = ["Star Wars": starWarsFilms, "Fast & Furious": fastAndFuriousFilms, "Toy Story": toyStoryFilms]
+for (franchise, films) in movies {
+    print("There are \(films.count) in the \(franchise) series")
 }
+
